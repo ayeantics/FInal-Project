@@ -4,7 +4,7 @@ body {
   height: 200vh;
 }
 
-.header {
+.upper-header {
   // border: 2px solid #333;
   background-color: #252b42;
 }
@@ -109,7 +109,7 @@ body {
   }
 }
 
-section {
+.section {
   // border: 2px solid red;
   display: flex;
   justify-content: center;
@@ -207,7 +207,7 @@ section {
 
           &:hover {
             transform: scale(1.04);
-            box-shadow: 0px 0px 63px 17px rgba(231, 64, 64, 0.1)
+            box-shadow: 0px 0px 63px 17px rgba(231, 64, 64, 0.1);
           }
 
           .cards-inner {
@@ -262,7 +262,7 @@ section {
               height: 3px;
               width: 50px;
               opacity: 70%;
-              background-color: #FFFFFF;
+              background-color: #ffffff;
             }
           }
         }
@@ -276,4 +276,121 @@ section {
       }
     }
   }
+}
+
+.first-article {
+  // border: 4px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 150px;
+
+  .packages-left-side {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+
+    * {
+      margin: 20px 0;
+      text-decoration: none;
+    }
+
+    .package-line {
+      width: 94px;
+      height: 7px;
+      background-color: #e74040;
+    }
+
+    h3 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      color: #737373;
+      width: 70%;
+    }
+
+    .package-learn-more {
+      color: #23a6f0;
+      font-weight: 700;
+      font-size: 14px;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.second-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sale-container {
+  display: flex;
+  margin-top: 200px;
+  flex-direction: column;
+  // margin-right: 150px;
+}
+
+.inner-image-content {
+  position: relative;
+  bottom: 200px;
+
+  .sale-img {
+    position: relative;
+    bottom: 85px;
+    left: 15px;
+    width: 60px;
+  }
+
+  .product-actions img {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 110px;
+    left: 50px;
+    cursor: pointer;
+  }
+}
+
+
+.sale-cards-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.sale-card {
+  border: 2px solid black;
+
+  h6 {
+    color: #23a6f0;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .card-review {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 10px;
+    border: 2px solid black;
+
+    img {
+      width: 50px;
+    }
+  }
+}
+
+
+.main-card-image {
+  border: 2px solid firebrick;
+  height: 74%;
 }
