@@ -1,0 +1,279 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  height: 200vh;
+}
+
+.header {
+  // border: 2px solid #333;
+  background-color: #252b42;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .nav-buttons {
+    position: relative;
+    right: 150px;
+
+    ul {
+      gap: 15px;
+    }
+
+    .login-button {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      background-color: transparent !important;
+      padding: 10px;
+      transition: 0.2s ease-in;
+
+      &:hover {
+        color: #23a6f0;
+        font-size: 18px;
+      }
+    }
+
+    .join-us-button {
+      background-color: #23a6f0;
+      padding: 15px 25px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: 0.2s ease-in;
+
+      &:hover {
+        background-color: #fff;
+        color: #23a6f0;
+      }
+
+      i {
+        position: relative;
+        left: 10px;
+      }
+    }
+  }
+
+  .nav-links {
+    margin-top: 30px;
+    display: flex;
+
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+
+      .brand-side {
+        margin-right: 56px;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.1px;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.04);
+        }
+
+        .brand-side-text {
+          transition: 0.3s ease-in-out;
+
+          &:hover {
+            color: #23a6f0;
+          }
+        }
+      }
+
+      li {
+        padding: 0 10px;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+
+        .nav-list {
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 24px;
+          transition: 0.1s ease-in-out;
+
+          &:hover {
+            color: #23a6f0;
+          }
+        }
+      }
+    }
+  }
+}
+
+section {
+  // border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  flex-wrap: wrap;
+
+  .cards-container {
+    // border: 4px solid blue;
+
+    .upper-container {
+      // border: 2px solid red;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .text-container {
+        color: #fff;
+        // border: 5px solid violet;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+          color: #23a6f0;
+          font-size: 16px;
+          font-weight: 700;
+        }
+
+        h1 {
+          font-size: 58px;
+          font-weight: 700;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 20px;
+        }
+
+        * {
+          margin-top: 35px;
+        }
+
+        .upper-buttons {
+          margin-bottom: 70px;
+          display: flex;
+          gap: 10px;
+          justify-content: center;
+          margin-top: 0;
+
+          * {
+            text-decoration: none;
+          }
+
+          .get-quote-now-button {
+            color: #fff;
+            background-color: #23a6f0;
+            padding: 15px 40px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 600;
+          }
+
+          .learn-more-button {
+            padding: 15px 40px;
+            border: 1px solid #23a6f0;
+            border-radius: 5px;
+            color: #23a6f0;
+            font-size: 14px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .lower-container {
+      padding-bottom: 50px;
+      .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        .card1,
+        .card2,
+        .card3 {
+          background-color: #fff;
+          padding: 35px 40px;
+          width: 328px;
+          color: #000 !important;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            transform: scale(1.04);
+            box-shadow: 0px 0px 63px 17px rgba(231, 64, 64, 0.1)
+          }
+
+          .cards-inner {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .card-heading {
+              font-size: 16px;
+              font-weight: 700;
+              margin-top: 9px;
+            }
+
+            .card-description {
+              font-size: 14px;
+              font-weight: 400;
+              color: #737373;
+              margin-top: 10px;
+            }
+
+            .card-line {
+              height: 3px;
+              width: 50px;
+              opacity: 70%;
+              background-color: #e74040;
+            }
+          }
+        }
+        // CARD3is calke stilebi
+        .card3 {
+          background-color: #23a6f0 !important;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            box-shadow: 0px 0px 63px 17px rgba(35, 166, 240, 0.1);
+          }
+
+          .cards-inner {
+            .card-description3 {
+              font-size: 14px;
+              font-weight: 400;
+              color: #fff !important;
+              margin-top: 10px;
+            }
+            .card-heading3 {
+              color: #fff;
+              font-size: 16px;
+              font-weight: 700;
+              margin-top: 9px;
+            }
+            .card-line3 {
+              height: 3px;
+              width: 50px;
+              opacity: 70%;
+              background-color: #FFFFFF;
+            }
+          }
+        }
+        // card3 end
+
+        // cardebis imgebi
+        img {
+          width: 70px;
+        }
+        // card img end
+      }
+    }
+  }
+}
