@@ -185,6 +185,11 @@ body {
   flex-direction: column;
   gap: 10px;
 }
+.section .cards-container .lower-container .cards .card1 .cards-inner:hover .card-line,
+.section .cards-container .lower-container .cards .card2 .cards-inner:hover .card-line,
+.section .cards-container .lower-container .cards .card3 .cards-inner:hover .card-line {
+  width: 75%;
+}
 .section .cards-container .lower-container .cards .card1 .cards-inner .card-heading,
 .section .cards-container .lower-container .cards .card2 .cards-inner .card-heading,
 .section .cards-container .lower-container .cards .card3 .cards-inner .card-heading {
@@ -207,6 +212,7 @@ body {
   width: 50px;
   opacity: 70%;
   background-color: #e74040;
+  transition: all 500ms ease-in-out;
 }
 .section .cards-container .lower-container .cards .card3 {
   background-color: #23a6f0 !important;
@@ -253,10 +259,14 @@ body {
   margin: 20px 0;
   text-decoration: none;
 }
+.first-article .packages-left-side:hover .package-line {
+  width: 70%;
+}
 .first-article .packages-left-side .package-line {
   width: 94px;
   height: 7px;
   background-color: #e74040;
+  transition: all 500ms ease-in-out;
 }
 .first-article .packages-left-side h3 {
   font-size: 40px;
@@ -273,6 +283,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   transition: 0.2s ease-in-out;
+  max-width: 24%;
 }
 .first-article .packages-left-side .package-learn-more:hover {
   font-size: 16px;
