@@ -347,4 +347,57 @@ body {
 .main-card-image {
   border: 2px solid firebrick;
   height: 74%;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    height: auto;
+  }
+  .nav-bar .nav-buttons {
+    right: 0;
+  }
+  .nav-links {
+    margin-top: 15px;
+    flex-direction: column; /* Stack navigation links vertically */
+  }
+  .nav-links .ul {
+    margin-right: 0;
+  }
+  .section {
+    margin-top: 100px;
+  }
+  .cards-container .text-container {
+    width: 100%;
+    text-align: center;
+  }
+  .cards-container .lower-container .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-article {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .second-article {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .sale-container {
+    margin-top: 100px;
+  }
+  .sale-cards-container {
+    justify-content: center;
+  }
+  .sale-card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .inner-image-content {
+    display: none;
+  }
+  .main-card-image {
+    height: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
