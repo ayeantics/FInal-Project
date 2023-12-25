@@ -357,12 +357,34 @@ body {
   display: flex;
   margin-top: 200px;
   flex-direction: column;
+  border: 2px solid black;
   // margin-right: 150px;
+}
+.sale-heading {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 112px;
+  text-align: left;
 
-  .sale-heading {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 112px;
+  * {
+    margin: 6px 0;
+  }
+
+  h6 {
+    color: #23a6f0;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 40px;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 470px;
+    color: #737373;
   }
 }
 
@@ -402,7 +424,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 20px;
-    
+
     * {
       margin-top: 5px;
     }
@@ -467,7 +489,7 @@ body {
 
       p {
         font-size: 14px;
-        font-weight: 700;
+        font-weight: 600;
       }
 
       i {
@@ -498,10 +520,14 @@ body {
       gap: 7px;
       align-items: center;
 
+      * {
+        display: flex;
+      }
+
       p {
         color: #737373;
-        font-size: 14px;
-        font-weight: 600;
+        font-size: 12px;
+        font-weight: 500;
       }
 
       .info1,
@@ -552,3 +578,255 @@ body {
   // border: 2px solid firebrick;
   height: 45%;
 }
+
+.third-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .comments-container {
+    .sale-heading {
+      margin-right: 580px;
+      margin-top: 300px;
+    }
+
+    .comment-row {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      gap: 230px;
+      // border: 2px solid firebrick;
+
+      .left-comment-side,
+      .right-comment-side {
+        // border: 2px solid black;
+
+        * {
+          margin: 12px 0;
+        }
+
+        p {
+          font-weight: 500;
+          font-size: 14px;
+        }
+
+        .stars-row {
+          color: #f3cd03;
+          margin-top: 15px;
+
+          i {
+            margin: 0 3px;
+            font-size: 19px;
+          }
+        }
+
+        img {
+          width: 128px;
+          border-radius: 50%;
+        }
+
+        .comment-author {
+          margin-top: 15px;
+
+          h5 {
+            font-weight: 700;
+            font-size: 16px;
+            color: #252b42;
+          }
+          h6 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #737373;
+          }
+        }
+      }
+
+      p {
+        max-width: 320px;
+      }
+    }
+  }
+}
+input[type="email"] {
+  padding-left: 20px;
+}
+.last-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .subscribe-content-container {
+    margin-top: 285px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .sale-heading {
+      margin: 0;
+      text-align: center;
+    }
+
+    .subscribe-input {
+      margin-top: 70px;
+      display: flex;
+      gap: 2px;
+
+      .subscribe-input-email {
+        border: 1px solid #e6e6e6;
+        width: 580px;
+        transition: all 200ms ease-in-out;
+
+        &::placeholder {
+          font-weight: 500;
+          color: #737373;
+          font-size: 15px;
+        }
+
+        &:focus {
+          outline: 2px solid #23a6f0;
+        }
+      }
+
+      .subscribe-button-last {
+        border: 1px solid #e6e6e6;
+        background-color: #23a6f0;
+        border-radius: 0 5px 5px 0;
+        padding: 13px 20px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 769px) {
+  .nav-bar .nav-buttons {
+    right: 0;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    margin-top: 15px;
+
+    .brand-side {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  .section .cards-container .upper-container .text-container {
+    width: 100%;
+    text-align: center;
+
+    h1 {
+      font-size: 36px;
+    }
+  }
+
+  .section .cards-container .lower-container .cards {
+    flex-direction: column;
+    align-items: center;
+
+    .card1,
+    .card2,
+    .card3 {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .first-article {
+    flex-direction: column;
+  }
+  .first-article .packages-left-side {
+    width: 100%;
+    flex-direction: column;
+    
+
+    h3 {
+      font-size: 28px;
+    }
+
+    p {
+      width: 100%;
+    }
+
+    .package-learn-more {
+      max-width: none;
+    }
+  }
+
+  .sale-container {
+    margin-right: 0;
+  }
+
+  .sale-cards-container .sale-card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .comments-container .comment-row {
+    flex-direction: column;
+    gap: 30px;
+
+    .left-comment-side,
+    .right-comment-side {
+      margin: 0;
+      text-align: center;
+
+      img {
+        width: 100px;
+      }
+    }
+  }
+
+  .last-article .subscribe-content-container .subscribe-input {
+    flex-direction: column;
+
+    .subscribe-input-email {
+      width: 100%;
+    }
+
+    .subscribe-button-last {
+      border-radius: 5px;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+}
+
+
+/* Additional adjustments for iPhone devices */
+@media only screen and (max-width: 458px) {
+  /* Add this to your existing media query */
+  html {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  /* Adjust any specific containers causing overflow */
+  .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Adjust elements causing overflow */
+  .element {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* Ensure specific elements are not wider than the screen */
+  .wide-element {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+
